@@ -1,0 +1,282 @@
+/****************************************
+Name: Douglas Allan (8716904)
+Date: 2021/03/02
+Course Code: PROG1247
+Description: The relevant styles to replicate the designated design of the tickets_order_form webpage
+****************************************/
+
+/* Universal Selector applying general stylings, defaulting the margins and paddings */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Setting the font styles and sizing as well as creation of a background image */
+body  {	
+	background-image: url("../images/berry.jpg");
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+
+/* Styling of the fame in focus */
+div#frame {
+	margin: 25px auto;
+	padding: 20px 30px 20px 20px;
+	width: 50%;
+	min-width: 900px;
+	background-color: #ffffff;	
+	background-image: linear-gradient(#ffffff 20%, #fdf7e8 70%, #ffffff 100%);
+	border: 2px solid #009926;
+	border-radius: 8px;
+	box-shadow: 0px 0px 90px 2px #008020;
+}
+/* Styling all <p> elements to have a top and bottom margin of 20px */
+p {
+	margin: 20px 0px;
+}
+
+/* Setting the colour of links for the webpage */
+a {
+	color: #008020; 
+}
+
+/* Styling of the different instances of a link, specifically one thats already been clicked on and one that has not been clicked on */
+a:link, a:visited { 
+	text-decoration: none; 
+}
+/* Styling the link when it is being hovered over or tabbed onto */
+a:hover, a:focus { 
+    text-decoration: underline; 
+}
+
+/* Header */
+header {
+	height: 160px;
+	border-bottom: 2px solid #e8b417;
+}
+
+/* Pushing the image to the left with a float */	
+header img { 
+	float: left; 
+} 
+
+/* Styling the "New Year Central" title */
+header div#header-line-1 {
+	font-size: 300%;
+	font-weight: bold;	
+	text-align: right;
+	color: #ecc03b;
+	text-shadow: 2px 2px 2px black;
+}
+
+/*Styling the "For the child in all of us" title */
+header div#header-line-2 {
+	font-size: 130%;
+	font-weight: bold;
+	text-align: right;
+	font-style: italic;
+	color: #008020;
+}
+
+/* aside */
+aside {
+	width: 230px;
+	float: left;
+	margin: 30px 10px 0px 0px;
+}
+
+/* Styling of the "Products of the week..." title */
+aside div.sidebar-title {
+	font-size: 115%;
+	font-weight: bold;
+	color: #d1a215;
+}
+
+/* Styling the unordered list in the sidebar menu */
+aside ul {
+	margin: 15px 0px 0px 15px;
+}
+
+/* Styling the list options of the UL present */
+aside ul li {
+	margin: 15px 0px 0px 0px;
+}
+
+/* Setting the font style and size of the ul,a, and li of the aside section */
+aside ul li a{
+	font-style: italic;
+	font-size: 90%;
+}
+
+/* Main */
+main {
+	margin: 20px 0;
+	padding-left: 20px;
+	float: left;
+	width: 638px;
+	min-height: 600px;
+	border-left: 2px solid #e8b417;
+}
+
+/* Applying a margin to all fieldsets on the webpage */
+fieldset	{
+	margin: 20px 0;
+}
+
+/* Applying styles to all <legend> elements on the page */
+legend	{
+		margin-bottom: 10px;
+		font-weight: bold;
+		color: grey;
+		font-size: 85%;
+}
+
+/* Applying styles to all labels,inputs, and select elements on the webpage */
+label, input, select	{
+		font-size:90%;
+}
+
+/* Creating a coloured border for the required form inputs */
+input:required	{
+	border:2px solid orange;
+}
+
+/* Creating a border for the inputs that have been determined valid */
+input:valid	{
+		border:1px solid black;
+}
+
+/* Styling all the elements within the "notradio" class. This was done because i found
+that i could not reset the configurations of the radio buttons had these styles been applied. */
+.notradio input, select	{
+		width:15em;
+		margin-left: 0.5em;
+		margin-bottom: 0.5em;
+}
+
+/* Specifically styling the labels of everything in the notradio class */
+.notradio label	{
+	float: left;
+	text-align: right;
+	width: 12em;
+}
+
+/* Applying these styles to still follow the instructions of the assignment, even though 
+the float was never applied due to the exclusion of the radio buttons from the notradio class */
+#payment_method label{
+		clear: left;
+}
+
+/* Styling the radio buttons by adjusting their width and margin for correct poistioning */
+input[type="radio"]{
+	width: auto;
+	margin-left: 3em;
+}
+
+/* Styling of the year dropdown menu */
+.ExpY {
+	width: 5em;
+}
+
+/* Styling of the month dropdown menu */
+.ExpM {
+	width: 7em;
+}
+
+/* Styling of the submit button */
+#submit	{
+	width: 10em;
+	margin-left: 12.7em;
+}
+
+/* Styling of the reset button */
+#reset	{
+	width: 10em;
+	margin-left: 0.5em;;
+}
+
+/* Styles for non-form elements begin here */
+main h1 { 
+	margin: 0;
+	font-size: 200%;
+}
+
+main h1:first-letter { 
+	font-size: 240%;
+}
+
+main h2 {
+	margin: 25px 0px;
+	font-size: 125%;
+}
+
+main h3 {	
+	font-size: 110%;
+}
+
+/* Styling of the product-categories id begins here */
+main ul#product-categories {
+	list-style-type: none;
+}
+
+main ul#product-categories li {
+	margin: 35px 0px;
+}
+
+main ul#product-categories h3 {
+	margin-top: 10px;
+}
+
+main ul#product-categories p{
+	margin-top: 5px;
+}
+
+main ul#product-categories img {
+	border: 2px solid #e8b417;
+	border-radius: 10px;
+	box-shadow: 0px 0px 6px 2px #ecc03b;
+}
+
+/* the styles for the navigation menu */
+#nav_menu {
+	margin-top: 2px;
+}
+
+#nav_menu ul {
+	list-style-type: none;
+	position: relative;
+}
+
+#nav_menu ul li {
+	float: left;
+}
+
+#nav_menu ul li a {
+    background-image: linear-gradient(#fdf7e8 15%, #ffffff 55%, #fdf7e8 100%);
+	width: 180px;
+	padding: 1em 0;
+	display: block;
+    text-align: center;    
+    text-decoration: none;  
+	font-weight: bold;
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	color: #d1a215;
+}
+
+#nav_menu a.current, #nav_menu a.current:hover, #nav_menu a.current:focus {
+	color: #d1a215;	
+	font-weight: bold;
+}
+
+/* Footer */
+footer {
+	clear: left;
+	border-top: 2px solid #e8b417;
+}
+
+footer p {
+	font-size: 80%;
+	text-align: center;
+}
